@@ -1,5 +1,7 @@
+import 'package:chat_ui/models/message_model.dart';
 import 'package:chat_ui/widgets/category_selector.dart';
 import 'package:chat_ui/widgets/favorite.contacts.dart';
+import 'package:chat_ui/widgets/recent_chats.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -66,7 +68,8 @@ class _HomeScreenState extends State<HomeScreen>{
               ),
               child: Column(
                 children: [
-                  FavoriteContacts()
+                  FavoriteContacts(),
+                  RecentChats(),
                 ],
               ),
             ),
